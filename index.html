@@ -45,7 +45,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[47.902715970210856,-122.30609947453115],[47.97571300176822,-122.14683499944897]]);
+        }).fitBounds([[47.92802082679413,-122.42997184403944],[48.07384042294824,-122.11144289387516]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -150,7 +150,7 @@
                         <td class="visible-with-data" id="displacement_risk_cost_burdened">' + (feature.properties['displacement_risk_cost_burdened'] !== null ? autolinker.link(String(feature.properties['displacement_risk_cost_burdened']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Percentage Critial Poverty</th>\
+                        <th scope="row">Percentage Critical Poverty</th>\
                         <td class="visible-with-data" id="displacement_risk_critical_poverty_percent">' + (feature.properties['displacement_risk_critical_poverty_percent'] !== null ? autolinker.link(String(feature.properties['displacement_risk_critical_poverty_percent']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
